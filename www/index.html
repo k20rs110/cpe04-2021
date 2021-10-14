@@ -215,7 +215,8 @@
         var rest = period - time;
         var m = parseInt(rest/60);
         var s = parseInt(rest - m*60);
-        $("#time").html("経過時間： " + time + "秒");
+        // $("#time").html("経過時間： " + time + "秒");
+        $("#time").html("経過時間： " + time);
         $("#remain").html("残り時間： " + rest + "秒(" + m + ":" + s + ")");
         analog(rest);
 

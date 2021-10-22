@@ -14,9 +14,20 @@ button{
   color:green;
 }
 
+#btnB{
+  background-color: orange;
+  color: purple;
+}
+
+#btnC{
+  background-color: gold;
+  color: rgb(218, 14, 14);
+}
+
 #remain{
   font-weight: bold;
 }
+
 
 #time{
   box-shadow: 5px 5px 5px;
@@ -79,7 +90,7 @@ button{
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 20px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
     

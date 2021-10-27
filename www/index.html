@@ -38,6 +38,10 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+        $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
         init();
     });
     
@@ -153,6 +157,8 @@
     var active = false;
     var startTime = 0;
     var period = 0;
+    var m = 0;
+    var s = 0;
 
     // ボタンの初期設定
     function init(){
@@ -183,6 +189,7 @@
     function btnAClick(e){
       active = true;
       startTime = new Date();
+      
       $('#btnA').prop('disabled', true);
 
     }
@@ -205,6 +212,14 @@
         $('#btnA').prop('disabled', false);
 
         
+    }
+
+    // ButtonDがクリックされたときの処理
+    function btnDClick(e){
+      m = 3;
+      s = 0;
+      $("#minute").val(m);
+      $("#second").val(s);
     }
     
  
@@ -251,8 +266,9 @@
     <div id="time">Time</div>
     <button id="btnA">Start</button>  
     <button id="btnB">Stop</button>  
-    <button id="btnC">Set</button>  
-    <input type="number" id="minute" value=0 >
+    <button id="btnC">Set</button> 
+    <button id="btnD">Cupramen</button> 
+    <input type="number" id="minute" value=0>
     <input type="number" id="second" value=15 >
 </body>
 </html>

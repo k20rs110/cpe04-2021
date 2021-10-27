@@ -24,6 +24,11 @@ button{
   color: rgb(218, 14, 14);
 }
 
+#btnD{
+  background-color: pink;
+  color: chartreuse;
+}
+
 #remain{
   font-weight: bold;
 }
@@ -92,6 +97,11 @@ button{
     #btnC {
         font-size: 20px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
+    }
+
+    #btnD{
+        font-size: 15px;
+        position: absolute; top: 450px; left: 78%; width: 20%; height: 50px;
     }
     
     #minute {
